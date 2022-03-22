@@ -14,6 +14,9 @@ app.get(`/visitas`, (req,res)=> {
 app.get(`/fyh`, (req,res)=> {
     res.send({fyh: new Date().toLocaleString()})
 })
+app.get(`/ruta`,(req,res)=>{
+    res.send({curso: `programacion Backend`, año:2022, expliacacion:`glitch`}) 
+})
 
 const PORT=8080
 
